@@ -1,0 +1,19 @@
+button {
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1.25rem;
+  border: none;
+}
+
+button:hover {
+  background-color: #5386e4;
+  color: whitesmoke;
+}
+
+thead {
+  background-color: #aeecef;
+}
+
+tbody > tr:nth-child(2n+1) {
+  background-color: #eefbfc;
+}
