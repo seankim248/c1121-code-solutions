@@ -1,0 +1,53 @@
+html,
+body {
+  margin: 0;
+  color: white;
+  background-color: rgb(27, 150, 217);
+  font-family: Lato, sans-serif;
+}
+
+h4 {
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 0.72rem;
+  color: rgb(221, 221, 221);
+  line-height: 15px;
+}
+
+.icon {
+  margin-top: 23px;
+  height: 45px;
+  width: 45px;
+}
+
+.icon-wrapper {
+  margin: auto;
+  background-color: white;
+  border-radius: 50%;
+  height: 90px;
+  width: 90px;
+}
+
+.container {
+  margin: 30% auto;
+  max-width: 80%;
+}
+
+.row {
+  display: flex;
+}
+
+.column-full {
+  flex-basis: 100%;
+}
+
+.column-one-third {
+  flex-basis: 33%;
+  padding: 10px 25px;
+}
+
+.text-align-center {
+  text-align: center;
+}
