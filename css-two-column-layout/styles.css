@@ -43,13 +43,11 @@ button {
 
 .row {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
   margin-bottom: 25px;
 }
 
 .column-full {
-  text-align: center;
   width: 100%;
 }
 
@@ -62,17 +60,27 @@ button {
 }
 
 .column-three-fourth {
-  padding-left: 5px;
-  padding-top: 10px;
-  flex-basis: 75%;
+  width: 75%;
 }
 
 .column-one-fourth {
-  display: flex;
-  justify-content: flex-end;
-  flex-basis: 25%;
+  width: 25%;
 }
 
-/* .column-half > .row > .column-half:nth-child(odd) {
-  margin-right: 20px;
-} */
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.padding-top-left {
+  padding-top: 10px;
+  padding-left: 5px;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
