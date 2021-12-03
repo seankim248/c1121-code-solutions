@@ -33,7 +33,6 @@ p {
 .container {
   margin: 30% auto;
   max-width: 80%;
-  text-align: center;
 }
 
 .row {
@@ -45,6 +44,10 @@ p {
 }
 
 .column-one-third {
-  flex-basis: 27%;
-  margin: 15px 25px 25px 25px;
+  flex-basis: 33%;
+  padding: 10px 25px;
+}
+
+.text-align-center {
+  text-align: center;
 }
