@@ -38,7 +38,10 @@ p {
 
 .row {
   display: flex;
-  justify-content: center;
+}
+
+.column-full {
+  flex-basis: 100%;
 }
 
 .column-one-third {
