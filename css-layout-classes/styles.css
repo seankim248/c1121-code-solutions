@@ -20,6 +20,10 @@ html {
   width: 66%;
 }
 
-img {
+.column-one-fourth {
+  width: 25%;
+}
+
+.character {
   width: 100%;
 }
