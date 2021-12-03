@@ -4,26 +4,20 @@ body {
   color: white;
   background-color: rgb(27, 150, 217);
   font-family: Lato, sans-serif;
-  font-weight: 400;
-}
-
-h2 {
-  font-weight: 300;
 }
 
 h4 {
   margin-bottom: 10px;
-  font-weight: 400;
 }
 
 p {
-  font-size: 0.8rem;
-  color: rgb(238, 238, 238);
+  font-size: 0.72rem;
+  color: rgb(221, 221, 221);
+  line-height: 15px;
 }
 
 .icon {
   margin-top: 23px;
-  font-weight: 100px;
   height: 45px;
   width: 45px;
 }
@@ -48,6 +42,6 @@ p {
 }
 
 .column-one-third {
-  flex-basis: 29%;
+  flex-basis: 27%;
   margin: 15px 25px 25px 25px;
 }
