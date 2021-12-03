@@ -1,0 +1,53 @@
+html,
+body {
+  margin: 0;
+  color: white;
+  background-color: rgb(27, 150, 217);
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+}
+
+h2 {
+  font-weight: 300;
+}
+
+h4 {
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+p {
+  font-size: 0.8rem;
+  color: rgb(238, 238, 238);
+}
+
+.icon {
+  margin-top: 23px;
+  font-weight: 100px;
+  height: 45px;
+  width: 45px;
+}
+
+.icon-wrapper {
+  margin: auto;
+  background-color: white;
+  border-radius: 50%;
+  height: 90px;
+  width: 90px;
+}
+
+.container {
+  margin: 30% auto;
+  max-width: 80%;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.column-one-third {
+  flex-basis: 29%;
+  margin: 25px;
+}
