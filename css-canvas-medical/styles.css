@@ -34,9 +34,22 @@ a {
   width: 1000px;
 }
 
-.clinicians-container {
+.clinician-background-color {
   background-color: #fafafa;
   border-bottom: 2px solid rgb(243, 243, 243);
+}
+
+.relative-position {
+  position: relative;
+}
+
+.hero-overlay {
+  max-width: 1000px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .contact-us-btn {
@@ -47,11 +60,22 @@ a {
   border-radius: 5px;
   padding: 10px;
   color: white;
-  margin-right: 50px;
 }
 
 .row {
   display: flex;
+}
+
+.margin-right {
+  margin-right: 50px;
+}
+
+.margin-left {
+  margin-left: 50px;
+}
+
+.margin-bottom {
+  margin-bottom: 50px;
 }
 
 .column-full {
@@ -88,6 +112,10 @@ a {
 
 .border-bottom-lightgrey {
   border-bottom: 1px solid rgb(238, 238, 238);
+}
+
+.white {
+  color: white;
 }
 
 .padding-bottom {
