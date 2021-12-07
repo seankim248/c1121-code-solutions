@@ -32,12 +32,17 @@ a {
   font-family: 'Avenir', sans-serif;
   color: #a2a2a2;
   text-decoration: none;
-  padding: 0 20px;
+}
+
+hr {
+  height: 1px;
+  background-color: #e4e4e4;
+  border: none;
 }
 
 .container {
   margin: 20px auto;
-  width: 1000px;
+  width: 100%;
 }
 
 .clinician-background-color {
@@ -49,7 +54,7 @@ a {
 
 .canvas-background-color {
   margin: 20px 0;
-  padding: 70px 0;
+  padding: 120px 0;
   background-color: #525351;
 }
 
@@ -96,7 +101,6 @@ a {
   border-radius: 3px;
   padding: 10px 35px;
   color: white;
-  margin-top: 10px;
 }
 
 .row {
@@ -107,12 +111,13 @@ a {
   margin-right: 50px;
 }
 
-.margin-left {
-  margin-left: 50px;
+.margin-top {
+  margin-top: 50px;
 }
 
-.margin-bottom {
-  margin-bottom: 50px;
+.inner-container {
+  width: 1000px;
+  margin: auto;
 }
 
 .column-full {
@@ -135,18 +140,6 @@ a {
   width: 25%;
 }
 
-.column-one-fifth {
-  width: 20%;
-}
-
-.column-one-tenth {
-  width: 10%;
-}
-
-.width-110 {
-  width: 110%;
-}
-
 .text-align-center {
   text-align: center;
 }
@@ -155,23 +148,11 @@ a {
   text-align: right;
 }
 
-.vertical-align {
-  vertical-align: middle;
-}
-
 .line-height-30 {
   line-height: 30px;
 }
 
-.line-height-20 {
-  line-height: 20px;
-}
-
 .border-bottom-lightgrey {
-  border-bottom: 1px solid rgb(238, 238, 238);
-}
-
-.border-bottom-lightlightgrey {
   border-bottom: 2px solid rgb(243, 243, 243);
 }
 
@@ -187,16 +168,8 @@ a {
   padding-bottom: 15px;
 }
 
-.justify-content-center {
-  justify-content: center;
-}
-
-.justify-content-spacebetween {
-  justify-content: space-between;
-}
-
-.align-items-center {
-  align-items: center;
+.padding-left-right-20 {
+  padding: 0 20px;
 }
 
 .margin-auto {
@@ -205,6 +178,10 @@ a {
 
 .margin-top-bottom-30 {
   margin: 30px 0;
+}
+
+.display-flex {
+  display: flex;
 }
 
 .logo-size {
