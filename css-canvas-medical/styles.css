@@ -1,3 +1,8 @@
+html,
+body {
+  margin: auto;
+}
+
 h1 {
   font-family: 'Tiempos Headline', sans-serif;
   font-weight: 300;
@@ -6,7 +11,7 @@ h1 {
 h2 {
   font-family: 'Tiempos Headline', sans-serif;
   font-weight: normal;
-  font-size: 2rem;
+  font-size: 1.7rem;
   color: #6e6e6e;
 }
 
@@ -36,17 +41,21 @@ a {
 }
 
 .clinician-background-color {
+  padding-top: 20px;
+  padding-bottom: 50px;
+  width: 100%;
   background-color: #fafafa;
-  border-bottom: 2px solid rgb(243, 243, 243);
+}
+
+.canvas-background-color {
+  margin: 20px 0;
+  padding: 70px 0;
+  background-color: #525351;
 }
 
 .relative-position {
   position: relative;
 }
-
-/* .hero-img {
-  max-width: 1000px;
-} */
 
 .overlay {
   background: rgba(0, 0, 0, 0.25);
@@ -62,6 +71,7 @@ a {
   padding: 50px 70px;
   background-image: url(images/hero.jpg);
   background-size: cover;
+  margin-bottom: 60px;
 }
 
 .text-content {
@@ -80,11 +90,11 @@ a {
 
 .get-started-btn {
   font-family: 'Avenir', sans-serif;
-  font-size: 0.8rem;
+  font-size: 1rem;
   background-color: #294464;
   border: none;
   border-radius: 3px;
-  padding: 10px 30px;
+  padding: 10px 35px;
   color: white;
   margin-top: 10px;
 }
@@ -121,12 +131,20 @@ a {
   width: 40%;
 }
 
+.column-one-fourth {
+  width: 25%;
+}
+
 .column-one-fifth {
   width: 20%;
 }
 
 .column-one-tenth {
   width: 10%;
+}
+
+.width-110 {
+  width: 110%;
 }
 
 .text-align-center {
@@ -137,16 +155,32 @@ a {
   text-align: right;
 }
 
-.line-height {
+.vertical-align {
+  vertical-align: middle;
+}
+
+.line-height-30 {
   line-height: 30px;
+}
+
+.line-height-20 {
+  line-height: 20px;
 }
 
 .border-bottom-lightgrey {
   border-bottom: 1px solid rgb(238, 238, 238);
 }
 
+.border-bottom-lightlightgrey {
+  border-bottom: 2px solid rgb(243, 243, 243);
+}
+
 .white {
   color: white;
+}
+
+.dark-grey {
+  color: #6e6e6e;
 }
 
 .padding-bottom {
@@ -157,10 +191,23 @@ a {
   justify-content: center;
 }
 
+.justify-content-spacebetween {
+  justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
 .margin-auto {
   margin: auto;
 }
 
-#logo-blue {
+.margin-top-bottom-30 {
+  margin: 30px 0;
+}
+
+.logo-size {
+  margin-top: 10px;
   height: 20px;
 }
