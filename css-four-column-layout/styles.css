@@ -1,0 +1,42 @@
+html,
+body {
+  font-family: 'Barlow', sans-serif;
+}
+
+h1 {
+  font-weight: 700;
+  text-align: center;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding-bottom: 15px;
+}
+
+p {
+  font-size: 0.6rem;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+}
+
+.column-one-fourth {
+  padding: 0 15px;
+  text-align: center;
+  width: 25%;
+}
+
+.icon {
+  width: 25%;
+}
