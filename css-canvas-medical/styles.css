@@ -1,0 +1,190 @@
+html,
+body {
+  margin: auto;
+}
+
+h1 {
+  font-family: 'Tiempos Headline', sans-serif;
+  font-weight: 300;
+}
+
+h2 {
+  font-family: 'Tiempos Headline', sans-serif;
+  font-weight: normal;
+  font-size: 1.7rem;
+  color: #6e6e6e;
+}
+
+h5 {
+  font-family: 'Avenir', sans-serif;
+  font-weight: 400;
+  color: #6e6e6e;
+}
+
+p {
+  font-size: 0.85rem;
+  font-family: 'Avenir', sans-serif;
+  color: #6e6e6e;
+}
+
+a {
+  font-size: 0.8rem;
+  font-family: 'Avenir', sans-serif;
+  color: #a2a2a2;
+  text-decoration: none;
+}
+
+hr {
+  height: 1px;
+  background-color: #e4e4e4;
+  border: none;
+}
+
+.container {
+  margin: 20px auto;
+  width: 100%;
+}
+
+.clinician-background-color {
+  padding-top: 20px;
+  padding-bottom: 50px;
+  width: 100%;
+  background-color: #fafafa;
+}
+
+.canvas-background-color {
+  margin: 20px 0;
+  padding: 120px 0;
+  background-color: #525351;
+}
+
+.relative-position {
+  position: relative;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.25);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.content {
+  height: 500px;
+  padding: 50px 70px;
+  background-image: url(images/hero.jpg);
+  background-size: cover;
+  margin-bottom: 60px;
+}
+
+.text-content {
+  width: 72%;
+}
+
+.contact-us-btn {
+  font-family: 'Avenir', sans-serif;
+  font-size: 0.8rem;
+  background-color: #294464;
+  border: none;
+  border-radius: 3px;
+  padding: 10px;
+  color: white;
+}
+
+.get-started-btn {
+  font-family: 'Avenir', sans-serif;
+  font-size: 1rem;
+  background-color: #294464;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 35px;
+  color: white;
+}
+
+.row {
+  display: flex;
+}
+
+.margin-right {
+  margin-right: 50px;
+}
+
+.margin-top {
+  margin-top: 50px;
+}
+
+.inner-container {
+  width: 1000px;
+  margin: auto;
+}
+
+.column-full {
+  width: 100%;
+}
+
+.column-three-fifth {
+  width: 60%;
+}
+
+.column-one-half {
+  width: 50%;
+}
+
+.column-two-fifth {
+  width: 40%;
+}
+
+.column-one-fourth {
+  width: 25%;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+.line-height-30 {
+  line-height: 30px;
+}
+
+.border-bottom-lightgrey {
+  border-bottom: 2px solid rgb(243, 243, 243);
+}
+
+.white {
+  color: white;
+}
+
+.dark-grey {
+  color: #6e6e6e;
+}
+
+.padding-bottom {
+  padding-bottom: 15px;
+}
+
+.padding-left-right-20 {
+  padding: 0 20px;
+}
+
+.margin-auto {
+  margin: auto;
+}
+
+.margin-top-bottom-30 {
+  margin: 30px 0;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.logo-size {
+  margin-top: 10px;
+  height: 20px;
+}
