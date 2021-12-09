@@ -1,0 +1,61 @@
+html,
+body {
+  font-family: 'DM Sans', sans-serif;
+}
+
+h1 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+img {
+  height: 300px;
+  width: 200px;
+}
+
+span {
+  font-size: 0.8rem;
+}
+
+#img-width {
+  width: 200px;
+}
+
+#object-fit-cover {
+  object-fit: cover;
+}
+
+.container {
+  width: 1000px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.column-one-fifth {
+  width: 20%;
+}
+
+.margin {
+  margin: 10px;
+}
+
+.margin-bottom {
+  margin-bottom: 10px;
+}
+
+.border-right {
+  border-right: 1.5px solid #d6d6d6;
+  padding-right: 4px;
+}
+
+.color-d6 {
+  color: #d6d6d6;
+}
+
+.highlight {
+  background-color: #fff2e7;
+}
