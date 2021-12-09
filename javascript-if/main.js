@@ -7,6 +7,7 @@
             categorizeAcidity,
             introduceWarnerBro
  */
+
 function isUnderFive(number) {
   if (number < 5) {
     return true;
