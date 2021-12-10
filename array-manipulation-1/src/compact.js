@@ -9,7 +9,6 @@ function compact(array) {
     if (array[i]) {
       // push the item into the "compactArr" list
       compactArr.push(array[i]);
-      // otherwise don't do anything
     }
   }
   // then push out the "compactArr" list
