@@ -1,0 +1,29 @@
+html,
+body {
+  margin: auto;
+}
+
+.container {
+  width: 100%;
+}
+
+.inner-container {
+  width: 1000px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+}
+
+.two-fifth {
+  width: 40%;
+}
+
+.three-fifth {
+  width: 60%;
+}
+
+.text-align-end {
+  text-align: center;
+}
