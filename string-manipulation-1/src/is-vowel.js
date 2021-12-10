@@ -6,6 +6,6 @@ function isVowel(char) {
     // push out a value of true
     return true;
   }
-  // push out a value of false
+  // otherwise push out a value of false
   return false;
 }

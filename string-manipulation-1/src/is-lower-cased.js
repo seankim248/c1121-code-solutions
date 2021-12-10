@@ -9,6 +9,6 @@ function isLowerCased(word) {
       return false;
     }
   }
-  // push out a value of true
+  // otherwise push out a value of true
   return true;
 }
