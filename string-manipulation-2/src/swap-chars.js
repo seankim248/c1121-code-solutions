@@ -9,7 +9,7 @@ function swapChars(firstIndex, secondIndex, string) {
   splitStr[firstIndex] = splitStr[secondIndex];
   // swap character at "secondIndex" index with character at "firstIndex" index
   splitStr[secondIndex] = temp;
-  // storage for list joined together to make a string again
+  // storage for list joined together to make a string again by using the "join" method
   var swappedWord = splitStr.join('');
   // push the swappedWord string
   return swappedWord;

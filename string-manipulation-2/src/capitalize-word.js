@@ -8,7 +8,7 @@ function capitalizeWord(word) {
   }
   // storage of "firstChar" which is the first character capitalized from the "word" input
   var firstChar = word[0].toUpperCase();
-  // storage of "restOfWord" which is the letters besides the first character lowercased from the "word" input
+  // storage of "restOfWord" which are the letters besides the first character lowercased from the "word" input
   var restOfWord = word.slice(1, word.length).toLowerCase();
   // push out the combination of "firstChar" and "restOfWord"
   return firstChar + restOfWord;

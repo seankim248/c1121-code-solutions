@@ -9,7 +9,7 @@ function capitalizeWords(string) {
   for (var i = 0; i < splitStr.length; i++) {
     // storage of "firstChar" which is the first character capitalized from the "splitStr" item
     var firstChar = splitStr[i][0].toUpperCase();
-    // storage of "restOfWord" which is the letters besides the first character lowercased from the "splitStr" item
+    // storage of "restOfWord" which are the letters besides the first character lowercased from the "splitStr" item
     var restOfWord = splitStr[i].slice(1, splitStr[i].length).toLowerCase();
     // storage for combination of "firstChar" and "restOfWord"
     var upperCased = firstChar + restOfWord;
