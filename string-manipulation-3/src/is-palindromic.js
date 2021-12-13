@@ -10,6 +10,6 @@ function isPalindromic(string) {
     // return true
     return true;
   }
-  // return false
+  // otherwise return false
   return false;
 }
