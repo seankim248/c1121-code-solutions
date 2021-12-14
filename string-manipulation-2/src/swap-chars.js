@@ -1,16 +1,22 @@
 /* exported swapChars */
 // define function
 function swapChars(firstIndex, secondIndex, string) {
-  // storage for each character separated in the string
-  var splitStr = string.split('');
-  // storage for character at "firstIndex" index
-  var temp = splitStr[firstIndex];
-  // swap character at "firstIndex" index with character at "secondIndex" index
-  splitStr[firstIndex] = splitStr[secondIndex];
-  // swap character at "secondIndex" index with character at "firstIndex" index
-  splitStr[secondIndex] = temp;
-  // storage for list joined together to make a string again by using the "join" method
-  var swappedWord = splitStr.join('');
-  // push the swappedWord string
-  return swappedWord;
+  // if firstIndex is equal to second Index return the string
+  if (firstIndex === secondIndex) return string;
+  // storage for empty string
+  var swapped = '';
+  // storage for character at firstIndex in string
+  var swapChar1 = string[firstIndex];
+  // storage for character at secondIndex in string
+  var swapChar2 = string[secondIndex];
+  // storage for characters before firstIndex in string
+  var firstPart = string.slice(0, firstIndex);
+  // storage for characters after firstIndex but before secondIndex in string
+  var secondPart = string.slice(firstIndex + 1, secondIndex);
+  // storage for characters after secondIndex in string
+  var thirdPart = string.slice(secondIndex + 1, string.length);
+  // combine firstPart, swapChar2, secondPart, swapChar1, and thirdPart into swapped string
+  swapped += firstPart + swapChar2 + secondPart + swapChar1 + thirdPart;
+  // return string
+  return swapped;
 }
