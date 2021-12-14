@@ -1,0 +1,69 @@
+html,
+body {
+  font-family: sans-serif;
+}
+
+div button {
+  margin-top: 35px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.no {
+  border: none;
+  background-color: #eb5d5d;
+  color: #fefefe;
+  font-size: 1.8rem;
+  width: 100px;
+  height: 50px;
+  border-radius: 8px;
+  box-shadow: 0 3px 3px gray;
+}
+
+.open-modal {
+  width: 220px;
+  height: 50px;
+  background-color: #4a4ae9;
+  color: #fefefe;
+  font-size: 1.8rem;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 3px 3px gray;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+}
+
+.no-modal {
+  visibility: hidden;
+}
+
+.modal-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  position: fixed;
+  top: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fefefe;
+  border-radius: 5px;
+  padding: 40px;
+  width: 500px;
+  height: 200px;
+  visibility: visible;
+  z-index: 1;
+}
