@@ -1,12 +1,15 @@
 var $button = document.querySelector('button');
 var $body = document.querySelector('body');
+var dark = true;
 
 $button.addEventListener('click', function (e) {
-  if ($body.className === 'dark') {
+  if (dark === true) {
     $body.className = 'light';
     $button.className = 'btn-light';
-  } else {
+    dark = false;
+  } else if (dark === false) {
     $body.className = 'dark';
     $button.className = 'btn-dark';
+    dark = true;
   }
 });
