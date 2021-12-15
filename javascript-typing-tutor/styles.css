@@ -1,0 +1,42 @@
+html,
+body {
+  font-family: monospace;
+  background-color: #1b1d36;
+}
+
+span {
+  padding-bottom: 3px;
+  margin: 0 -8px;
+  white-space: pre;
+}
+
+.underline {
+  border-bottom: 2px solid #99d6eb;
+}
+
+h1 {
+  font-size: 30px;
+  color: #99d6eb;
+}
+
+.words-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.matrix-green {
+  color: #fca6d1;
+  border-bottom: none;
+}
+
+.alert-red {
+  color: #fffb85;
+  border-bottom: 2px solid #fffb85;
+}
+
+/* red: #da3234
+matrix green: #14f105
+dark green: #043904
+black: #040404 */
