@@ -8,4 +8,5 @@ $form.addEventListener('submit', function (e) {
     obj[$inputs[i].name] = $inputs[i].value;
   }
   console.log('Message Data:', obj);
+  $form.reset();
 });
