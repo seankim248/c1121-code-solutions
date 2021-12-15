@@ -2,7 +2,7 @@ console.log('Lodash is loaded:', typeof _ !== 'undefined');
 
 var deck = [];
 var suits = ['♠', '♥', '♣', '♦'];
-var ranks = ['2', '3', '4', '5', '6', '7', '8', '9', 'T', 'J', 'Q', 'K', 'A'];
+var ranks = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A'];
 var players = [
   {
     name: 'Sean Kim',
@@ -29,7 +29,7 @@ for (var i = 0; i < 4; i++) {
 }
 
 var shuffledDeck = _.shuffle(deck);
-console.log([]);
+console.log(shuffledDeck);
 
 for (var k = 0; k < players.length; k++) {
   for (var l = 0; l < shuffledDeck.length; l++) {
