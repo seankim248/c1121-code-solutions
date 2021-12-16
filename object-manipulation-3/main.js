@@ -41,7 +41,7 @@ function handleScore(cards) {
   for (var i = 0; i < cards.length; i++) {
     if (cards[i].includes('A')) total += 11;
     else if (cards[i].includes('K') || cards[i].includes('Q') || cards[i].includes('J')) total += 10;
-    else if (cards[i].includes(iterateRanks(ranks))) total += parseInt(iterateRanks(ranks));
+    // else if (cards[i].includes(iterateRanks(ranks))) total += parseInt(iterateRanks(ranks));
   }
   return total;
 }
@@ -56,12 +56,12 @@ function highestScore(scores) {
   return highest;
 }
 
-function iterateRanks(arr) {
-  for (var i = 0; i < arr.length; i++) {
-    var item = arr[i];
-  }
-  return item;
-}
+// function iterateRanks(arr) {
+//   for (var i = 0; i < arr.length; i++) {
+//     var item = arr[i];
+//   }
+//   return item;
+// }
 
 var highestScoreIndex = playerScores.indexOf(highestScore(playerScores));
 
