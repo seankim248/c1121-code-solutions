@@ -22,8 +22,8 @@ var players = [
   }
 ];
 
-for (var i = 0; i < 4; i++) {
-  for (var j = 0; j < 13; j++) {
+for (var i = 0; i < suits.length; i++) {
+  for (var j = 0; j < ranks.length; j++) {
     deck.push(ranks[j] + suits[i]);
   }
 }
@@ -40,15 +40,8 @@ function handleScore(cards) {
   var total = 0;
   for (var i = 0; i < cards.length; i++) {
     if (cards[i].includes('A')) total += 11;
-    else if (cards[i].includes('K') || cards[i].includes('Q') || cards[i].includes('J') || cards[i].includes('10')) total += 10;
-    else if (cards[i].includes('9')) total += 9;
-    else if (cards[i].includes('8')) total += 8;
-    else if (cards[i].includes('7')) total += 7;
-    else if (cards[i].includes('6')) total += 6;
-    else if (cards[i].includes('5')) total += 5;
-    else if (cards[i].includes('4')) total += 4;
-    else if (cards[i].includes('3')) total += 3;
-    else if (cards[i].includes('2')) total += 2;
+    else if (cards[i].includes('K') || cards[i].includes('Q') || cards[i].includes('J')) total += 10;
+    else if (cards[i].includes(iterateRanks(ranks))) total += parseInt(iterateRanks(ranks));
   }
   return total;
 }
@@ -63,6 +56,15 @@ function highestScore(scores) {
   return highest;
 }
 
+function iterateRanks(arr) {
+  for (var i = 0; i < arr.length; i++) {
+    var item = arr[i];
+  }
+  return item;
+}
+
 var highestScoreIndex = playerScores.indexOf(highestScore(playerScores));
 
 console.log(players[highestScoreIndex].name);
+console.log(playerScores);
+console.log(players);
