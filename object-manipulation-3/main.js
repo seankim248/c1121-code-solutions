@@ -41,14 +41,14 @@ function handleScore(cards) {
   for (var i = 0; i < cards.length; i++) {
     if (cards[i].includes('A')) total += 11;
     else if (cards[i].includes('K') || cards[i].includes('Q') || cards[i].includes('J')) total += 10;
-    // else if (cards[i].includes(iterateRanks(ranks))) total += parseInt(iterateRanks(ranks));
+    else total += parseInt(cards[i]);
   }
   return total;
 }
 
 function highestScore(scores) {
+  var highest = 0;
   for (var i = 0; i < scores.length; i++) {
-    var highest = 0;
     if (scores[i] > highest) {
       highest = scores[i];
     }
@@ -56,15 +56,36 @@ function highestScore(scores) {
   return highest;
 }
 
-// function iterateRanks(arr) {
-//   for (var i = 0; i < arr.length; i++) {
-//     var item = arr[i];
-//   }
-//   return item;
-// }
-
 var highestScoreIndex = playerScores.indexOf(highestScore(playerScores));
 
-console.log(players[highestScoreIndex].name);
-console.log(playerScores);
-console.log(players);
+function tieBreaker(scores) {
+  var tieIndices = [];
+  for (var i = 0; i < scores.length; i++) {
+    for (var j = 0; j < scores.length; j++) {
+      if (i !== j) {
+        if (scores[i] === scores[j]) {
+          tieIndices.push(i);
+        }
+      }
+    }
+  }
+  return tieIndices;
+}
+
+function logTieBreaker(arr) {
+  var names = '';
+  for (var m = 0; m < arr.length; m++) {
+    if (m === arr.length - 1) {
+      names += players[arr[m]].name;
+    } else {
+      names += players[arr[m]].name + ' and ';
+    }
+  }
+  return names + ' tied!';
+}
+
+if (tieBreaker(playerScores).length === 0) {
+  console.log(players[highestScoreIndex].name);
+} else {
+  console.log(logTieBreaker(tieBreaker(playerScores)));
+}
