@@ -1,15 +1,20 @@
 /* exported isPalindromic */
 // define function
 function isPalindromic(string) {
-  // storage for list that contains string without any spaces
-  var stringArr = string.split(' ').join('').split('');
-  // storage for list that contains reversed string without any spaces
-  var stringArrReverse = string.split(' ').join('').split('').reverse();
-  // if string is equal to reversed string,
-  if (stringArr.join('') === stringArrReverse.join('')) {
+  // get rid of spaces in string
+  string = string.replace(/\s/g, '');
+  // storage for empty string
+  var reverseString = '';
+  // iterate through string backwards
+  for (var i = string.length - 1; i >= 0; i--) {
+    // add current item to reverseString string
+    reverseString += string[i];
+  }
+  // if string is equal to reverseString,
+  if (string === reverseString) {
     // return true
     return true;
   }
-  // otherwise return false
+  // return false
   return false;
 }

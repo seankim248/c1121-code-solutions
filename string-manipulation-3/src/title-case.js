@@ -3,6 +3,8 @@
 function titleCase(title) {
   // storage for empty list
   var titledArr = [];
+  // storage for specific chars
+  // var specialChars = ['for', 'the', 'and'];
   // storage for list of word items
   var stringArr = title.split(' ');
   // iterate through stringArr list

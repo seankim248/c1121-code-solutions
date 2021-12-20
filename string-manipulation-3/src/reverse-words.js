@@ -1,15 +1,23 @@
 /* exported reverseWords */
 // define function
 function reverseWords(string) {
-  // storage for list of string items separated by space
-  var stringArr = string.split(' ');
-  // empty string
-  var reversedStr = '';
-  // iterate through stringArr list
-  for (var i = 0; i < stringArr.length; i++) {
-    // add the reversed string items plus a space into the reversedStr string
-    reversedStr += stringArr[i].split('').reverse().join('') + ' ';
+  // list for string separated by spaces
+  var reverseArr = string.split(' ');
+  // empty list
+  var arr = [];
+
+  // iterate through reverseArr list
+  for (var i = 0; i < reverseArr.length; i++) {
+    // empty string
+    var reverseStr = '';
+    // iterate through reverseArr[i] string backwards
+    for (var j = reverseArr[i].length - 1; j >= 0; j--) {
+      // add current item to reverseStr string
+      reverseStr += reverseArr[i][j];
+    }
+    // put the reverseStr into the arr list
+    arr.push(reverseStr);
   }
-  // return reversedStr string with spaces cut off from the beginning and the end
-  return reversedStr.trim();
+  // return the arr list joined with spaces
+  return arr.join(' ');
 }
