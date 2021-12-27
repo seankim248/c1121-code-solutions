@@ -3,10 +3,10 @@
 function titleCase(title) {
   // storage for empty list
   var titledArr = [];
-  // storage for specific chars
-  // var specialChars = ['for', 'the', 'and'];
   // storage for list of word items
   var stringArr = title.split(' ');
+  // storage for list of special characters
+  var specialChar = ['for', 'and', 'the'];
   // iterate through stringArr list
   for (var i = 0; i < stringArr.length; i++) {
     // if item is equal to "i"
@@ -46,7 +46,7 @@ function titleCase(title) {
       // put in the item capitalized into list
       titledArr.push(stringArr[i][0].toUpperCase() + lastChars(stringArr[i]));
     // else if item length is greater than 3 and if item is equal to "for", "the", and "and"
-    } else if (stringArr[i].length > 2 && stringArr[i].toLowerCase() !== 'for' && stringArr[i].toLowerCase() !== 'the' && stringArr[i].toLowerCase() !== 'and') {
+    } else if (stringArr[i].length > 2 && !specialChar.includes(stringArr[i].toLowerCase())) {
       // put in item capitalized in list
       titledArr.push(stringArr[i][0].toUpperCase() + lastChars(stringArr[i]));
     // else if index is not zero and there is a semicolon at the end of the last item
