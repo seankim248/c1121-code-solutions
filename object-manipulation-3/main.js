@@ -58,8 +58,6 @@ function runCardGame(players) {
   }
 }
 
-// var playerScores = [handleScore(players[0].hand), handleScore(players[1].hand), handleScore(players[2].hand), handleScore(players[3].hand)];
-
 function handleScore(cards) {
   var total = 0;
   for (var i = 0; i < cards.length; i++) {
@@ -93,17 +91,5 @@ function tieBreaker(scores) {
   }
   return tieIndices;
 }
-
-// function logTieBreaker(arr) {
-//   var names = '';
-//   for (var m = 0; m < arr.length; m++) {
-//     if (m === arr.length - 1) {
-//       names += players[arr[m]].name;
-//     } else {
-//       names += players[arr[m]].name + ' and ';
-//     }
-//   }
-//   return names + ' tied!';
-// }
 
 runCardGame(players);
