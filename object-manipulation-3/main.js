@@ -1,5 +1,16 @@
 console.log('Lodash is loaded:', typeof _ !== 'undefined');
 
+var deck = [];
+var suits = ['♠', '♥', '♣', '♦'];
+var ranks = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A'];
+
+for (var i = 0; i < suits.length; i++) {
+  for (var j = 0; j < ranks.length; j++) {
+    deck.push(ranks[j] + suits[i]);
+  }
+}
+var shuffledDeck = _.shuffle(deck);
+
 var players = [
   {
     name: 'Sean Kim',
@@ -20,33 +31,29 @@ var players = [
 ];
 
 function runCardGame(players) {
-  var deck = [];
-  var suits = ['♠', '♥', '♣', '♦'];
-  var ranks = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A'];
-
-  for (var i = 0; i < suits.length; i++) {
-    for (var j = 0; j < ranks.length; j++) {
-      deck.push(ranks[j] + suits[i]);
-    }
-  }
-  var shuffledDeck = _.shuffle(deck);
   for (var k = 0; k < players.length; k++) {
     players[k].hand.push(shuffledDeck[k], shuffledDeck[k + players.length]);
   }
+  var playerScores = [];
   for (var l = 0; l < players.length; l++) {
-    var playerScores = [];
     var score = handleScore(players[l].hand);
     playerScores.push(score);
   }
   var highestScoreIndex = playerScores.indexOf(highestScore(playerScores));
 
   if (tieBreaker(playerScores).length === 0) {
+    console.log(playerScores);
     console.log(players[highestScoreIndex].name);
   } else {
-    for (var m = 0; m < tieBreaker(playerScores); m++) {
-      var remainingPlayers = [];
-      remainingPlayers.push(players[tieBreaker(playerScores[m])]);
+    var remainingPlayers = [];
+    var tiedIndices = tieBreaker(playerScores);
+    for (var m = 0; m < tiedIndices.length; m++) {
+      if (!remainingPlayers.includes(tiedIndices[m])) {
+        remainingPlayers.push(players[tiedIndices[m]]);
+      }
+      remainingPlayers[m].hand = [];
     }
+    console.log(playerScores);
     runCardGame(remainingPlayers);
   }
 }
