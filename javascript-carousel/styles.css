@@ -24,7 +24,16 @@ img {
   padding: 4px;
 }
 
+.fa-circle:hover {
+  cursor: pointer;
+}
+
 .fa-chevron-left,
 .fa-chevron-right {
   font-size: 3rem;
+}
+
+.fa-chevron-left,
+.fa-chevron-right:hover {
+  cursor: pointer;
 }
