@@ -1,0 +1,504 @@
+    1  exit
+    2  whoami
+    3  exit
+    4  git config --global user.name "Sean Kim"
+    5  git config --global user.email "seankim2480@gmail.com"
+    6  git config --global --list
+    7  exit
+    8  cd
+    9  cd repos
+   10  cd c1121-code-solutions/
+   11  http https://example.com
+   12  http --verbose https://example.com
+   13  http --body GET https://jsonplaceholder.typicode.com/users > http-messages/users.json
+   14  http --body GET https://example.com > http-messages/index.html
+   15  git status
+   16  git add .
+   17  gi ci -m "http-messages"
+   18  git ci -m "http-messages"
+   19  git commit -m "http-messages"
+   20  git push origin http-messages
+   21  exit
+   22  cd repos
+   23  cd c1121-code-solutions/
+   24  git status
+   25  git add .
+   26  git commit -m "javascript-ajax"
+   27  git push origin javascript-ajax
+   28  git status
+   29  git switch master
+   30  git pull origin master
+   31  git switch javascript-carousel
+   32  git status
+   33  git add .
+   34  git commit -m "javascript-carousel"
+   35  git status
+   36  git push origin javascript-carousel
+   37  git status
+   38  git switch master
+   39  git pull origin master
+   40  git status
+   41  dev-env
+   42  exit
+   43  http http http://www.omdbapi.com/ apikey=[3ba74abf]
+   44  http http http://www.omdbapi.com/ apikey=[3ba74abf] s==Batman
+   45* http http http://www.omdbapi.com/ apikey=[3ba74abf]
+   46  http http://www.omdbapi.com/ apikey=[3ba74abf] s==Batman
+   47  http http://www.omdbapi.com apikey=3ba74abf s==Batman
+   48  http http://www.omdbapi.com apikey=3ba74abf t==Batman
+   49  http http://www.omdbapi.com apikey==3ba74abf t==Batman
+   50  http http://www.omdbapi.com apikey==3ba74abf t==Dark Knight
+   51  http http://www.omdbapi.com apikey==3ba74abf t==Dark_Knight
+   52  http http://www.omdbapi.com apikey==3ba74abf t==Wall_Street
+   53  http http://www.omdbapi.com apikey==3ba74abf t==Mask_of_Light
+   54  http http://www.omdbapi.com apikey==3ba74abf t==Legends_of_Metru_Nui
+   55  http http://www.omdbapi.com apikey==3ba74abf t==Sherlock
+   56  http http://www.omdbapi.com apikey==3ba74abf t==Spiderman_No_Way_Home
+   57  http http://www.omdbapi.com apikey==3ba74abf t==No_way_home
+   58  http http://www.omdbapi.com apikey==3ba74abf type==movie
+   59  http http://www.omdbapi.com apikey==3ba74abf t==dark_knight
+   60  http http://www.omdbapi.com apikey==3ba74abf t==batman_begins
+   61  http http://www.omdbapi.com apikey==3ba74abf t==dark_knight_rises
+   62  http http://www.omdbapi.com apikey==3ba74abf t==iron_man
+   63  http http://www.omdbapi.com apikey==3ba74abf t==avengers
+   64  http http://www.omdbapi.com apikey==3ba74abf t==endgame
+   65  http http://www.omdbapi.com apikey==3ba74abf t==avengers_endgame
+   66  http http://www.omdbapi.com apikey==3ba74abf t==no_way_home
+   67  http http://www.omdbapi.com apikey==3ba74abf t==shang_chi
+   68  http http://www.omdbapi.com apikey==3ba74af t==Guardians_of_the_galaxy_2
+   69  http http://www.omdbapi.com apikey==3ba74abf t==Guardians_of_the_galaxy_2
+   70  http http://www.omdbapi.com apikey==3ba74abf t==Guardians_of_the_galaxy
+   71  http http://www.omdbapi.com apikey==3ba74abf t==infinity_war
+   72  http http://www.omdbapi.com apikey==3ba74abf t==shang_chi
+   73  lear
+   74  clear
+   75  https://api.themoviedb.org/3/movie/550 api_key=2356b44d25e3e7033f8e7bf19963bd18
+   76  http https://api.themoviedb.org/3/movie/550 api_key=2356b44d25e3e7033f8e7bf19963bd18
+   77  http https://api.themoviedb.org/3/movie/550 api_key=ae82140c9c251d2fcd2c3ce9711b3299
+   78  http https://api.themoviedb.org/3/movie/550?api_key=ae82140c9c251d2fcd2c3ce9711b3299
+   79  http https://api.themoviedb.org/3/movie api_key==https://api.themoviedb.org/3/movie/550?api_key=ae82140c9c251d2fcd2c3ce9711b3299 query==Bourne
+   80  http https://api.themoviedb.org/3/movie api_key==ae82140c9c251d2fcd2c3ce9711b3299 query==Bourne
+   81  http https://api.themoviedb.org/3/movie api_key==ae82140c9c251d2fcd2c3ce9711b3299 query==Spiderman
+   82  http https://api.themoviedb.org/3/movie api_key==ae82140c9c251d2fcd2c3ce9711b3299 query==Jack+Reacher
+   83  http https://api.themoviedb.org/3/movie api_key==ae82140c9c251d2fcd2c3ce9711b3299 query==Jack_Reacher
+   84  http http://www.omdbapi.com apikey==3ba74abf t==Bourne
+   85  cd ~/repos
+   86  git clone git@github.com:seankim248/ajax-project.git
+   87  cd ajax-project/
+   88  npm ci
+   89  pull origin master
+   90  git pull origin master
+   91  git branch issue-1-view-list-of-movies
+   92  git switch issue-1-view-list-of-movies
+   93  git status
+   94  git add .
+   95  git commit -m "created HTML and CSS layout without the card components"
+   96  git push origin issue-1-view-list-of-movies
+   97  git status
+   98  git add .
+   99  git commit -m "Make a XMLHttpRequest for the omdb api"
+  100  git push origin issue-1-view-list-of-movies
+  101  http http://www.omdbapi.com apikey==3ba74abf t==Spiderman
+  102  http http://www.omdbapi.com apikey==3ba74abf t==Lego
+  103  http https://api.themoviedb.org/3/movie/popular api_key==ae82140c9c251d2fcd2c3ce9711b3299
+  104  clear
+  105  git status
+  106  git add .
+  107  git commit -m "made sure that the data response is correct"
+  108  git push origin issue-1-view-list-of-movies
+  109  http https://api.themoviedb.org/3/movie/popular api_key == ae82140c9c251d2fcd2c3ce9711b3299
+  110  http https://api.themoviedb.org/3/movie/popular api_key==ae82140c9c251d2fcd2c3ce9711b3299
+  111  git status
+  112  git add .
+  113  git commit -m "created card component and appended each card to div with class 'card-container'"
+  114  git push origin issue-1-view-list-of-movies
+  115  git status
+  116  git add .
+  117  git commit -m "made the page look nice on both mobile and desktop versions"
+  118  git push origin issue-1-view-list-of-movies
+  119  git status
+  120  git add .
+  121  git commit -m "made utility function for rendering cards and changed the for loop"
+  122  git push origin issue-1-view-list-of-movies
+  123  git status
+  124  git switch master
+  125  git pull origin master
+  126  git status
+  127  git branch issue-2-view-description-of-movie
+  128  git switch issue-2-view-description-of-movie
+  129  git status
+  130  git add .
+  131  git commit -m "create p elements for each card at the bottom right corner"
+  132  git push origin issue-2-view-description-of-movie
+  133  git status
+  134  git add .
+  135  git commit -m "added an eventListener for the p element that manipulates the card"
+  136  git push origin issue-2-view-description-of-movie
+  137  git status
+  138  git add .
+  139  git commit -m "fixed bugs with transitions"
+  140  git push origin issue-2-view-description-of-movie
+  141  git status
+  142  git switch master
+  143  git pull origin master
+  144  git status
+  145  git branch issue-3-filter-movies-by-genre
+  146  git switch issue-3-filter-movies-by-genre
+  147  http https://api.themoviedb.org/3/genre/movie/list api_key==ae82140c9c251d2fcd2c3ce9711b3299 language==en-US
+  148  http https://api.themoviedb.org/3/genre/movie/list api_key==ae82140c9c251d2fcd2c3ce9711b3299 with_genres==28
+  149  http https://api.themoviedb.org/3/discover/movie api_key==ae82140c9c251d2fcd2c3ce9711b3299 with_genres==28
+  150* http https://api.themoviedb.org/3/discover/movie api_key==ae82140c9c251d2fcd2c3ce9711b3299 with_genres==5
+  151  http https://api.themoviedb.org/3/genre/movie/list api_key==ae82140c9c251d2fcd2c3ce9711b3299 language==en-US
+  152  git status
+  153  git add .
+  154  git commit -m "create buttons and added an EventListener for each button"
+  155  git push origin issue-3-filter-movies-by-genre
+  156  git status
+  157  git add .
+  158  git commit -m "fixed some css bugs"
+  159  git push origin issue-3-filter-movies-by-genre
+  160  git status
+  161  git add .
+  162  git commit -m "refactored if statements and multiple lines of xml requests"
+  163  git push origin issue-3-filter-movies-by-genre
+  164  git status
+  165  git add .
+  166  git commit -m "removed '1' from renderPopularMovies1 function"
+  167  git push origin issue-3-filter-movies-by-genre
+  168  git status
+  169  git add .
+  170  git commit -m "made a return statement in the if statment"
+  171  git push origin issue-3-filter-movies-by-genre
+  172  git status
+  173  git switch master
+  174  git pull origin master
+  175  git status
+  176  git add .
+  177  git commit -m "add a search bar component on the top left corner"
+  178  git reset
+  179  git status
+  180  git branch issue-4-search-movies-by-name
+  181  git switch issue-4-search-movies-by-name
+  182  git status
+  183  git add .
+  184  git commit -m "added a search bar component on the top left corner"
+  185  git push origin issue-4-search-movies-by-name
+  186  http https://api.themoviedb.org/3/search/movie?api_key=ae82140c9c251d2fcd2c3ce9711b3299 language==en-US query==Avengers page==1
+  187  git status
+  188  git add .
+  189  git commit -m "added an eventListener to the text input that will show a list of movies if the name matches the search description when pressing enter"
+  190  git push origin issue-4-search-movies-by-name
+  191  git add .
+  192  git status
+  193  git commit -m "replaced empty imgs with placeholder img"
+  194  git push origin issue-4-search-movies-by-name
+  195  git status
+  196  git add .
+  197  git commit -m "forgot to commit the placeholder img"
+  198  git push origin issue-4-search-movies-by-name
+  199  git status
+  200  git switch master
+  201  git pull origin master
+  202  git status
+  203  git add .
+  204  git commit -m "forgot to add dark-placeholder img in issue-4"
+  205  git push origin master
+  206  git branch issue-5-add-movie-to-watchlist
+  207  git switch issue-5-add-movie-to-watchlist
+  208  git status
+  209  git add .
+  210  git commit -m "added a plus icon underneath the rating for each card component"
+  211  git push origin issue-5-add-movie-to-watchlist
+  212  git status
+  213  git add .
+  214  git commit -m "added an eventListener for the plus icon"
+  215  git push origin issue-5-add-movie-to-watchlist
+  216  git status
+  217  git add .
+  218  git commit -m "added an eventListener for the checkmark"
+  219  git push origin issue-5-add-movie-to-watchlist
+  220  git status
+  221  git add .
+  222  git commit -m "added a watchlist element to the header"
+  223  git push origin issue-5-add-movie-to-watchlist
+  224  git status
+  225  git switch master
+  226  git pull origin master
+  227  git switch issue-5-add-movie-to-watchlist
+  228  git switch master
+  229  git branch issue-6-view-watchlist
+  230  git switch issue-6-view-watchlist
+  231  git status
+  232  git add .
+  233  git commit -m "added a watchlist element"
+  234  git push origin issue-6-view-watchlist
+  235  git status
+  236  git add .
+  237  git commit -m "created watchlist view"
+  238  git push origin issue-6-view-watchlist
+  239  git status
+  240  git add .
+  241  git commit -m "fixed bugs"
+  242  git push origin issue-6-view-watchlist
+  243  git status
+  244  git add .
+  245  git commit -m "made some changes"
+  246  git push origin issue-6-view-watchlist
+  247  git status
+  248  git switch master
+  249  git pull origin master
+  250  git switch issue-6-view-watchlist
+  251  git status
+  252  git switch master
+  253  git add .
+  254  git push origin master
+  255  git status
+  256  git commit -m "readjusted css to fix deployed version"
+  257  git push origin master
+  258  git status
+  259  git branch project-code
+  260  git switch project-code
+  261  git status
+  262  git add .
+  263  git status
+  264  git commit -m "deleted files that are no longer needed"
+  265  git push origin project-code
+  266  git status
+  267  git add .
+  268  git commit -m "removed all commented out code and removed all unused CSS rule-sets and declarations"
+  269  git status
+  270  git add .
+  271  git commit -m "made small change to html"
+  272  git push origin project-code
+  273  git status
+  274  git add .
+  275  git commit -m "fixed card icon bugs"
+  276  git push origin project-code
+  277  git status
+  278  git switch master
+  279  cd ..
+  280  git clone git@github.com:seankim248/week-planner.git
+  281  ls
+  282  cd week-planner
+  283  npm ci
+  284  git pull origin master
+  285  git status
+  286  git pull origin master
+  287  git status
+  288  git add index.html main.js styles.css
+  289  git status
+  290  git commit -m "users are able to view each entry from each day"
+  291  git push origin master
+  292  git pull master origin
+  293  git pull origin master
+  294  git status
+  295  cd ..
+  296  ls
+  297  cd ajax-project
+  298  git branch project-interfaces
+  299  git switch project-interfaces
+  300  git switch master
+  301  git pull origin master
+  302  git branch -d project-interfaces
+  303  git branch project-interfaces
+  304  git switch project-interfaces
+  305  git switch master
+  306  git branch -d project-interfaces
+  307  git pull origin master
+  308  git status
+  309  git switch project-code
+  310  git push origin master
+  311  git status
+  312  git commit -m "no changes were made"
+  313  git status
+  314  git add .
+  315  git commit -m "no changes were made
+  316  git status
+  317  git commit -m "no changes were made"
+  318  git push origin master
+  319  git pull origin master
+  320  git push origin master
+  321  git pull origin master
+  322  git status
+  323  git switch project-code
+  324  git switch master
+  325  git pull
+  326  git status
+  327  git switch project-code
+  328  git status
+  329  git switch master
+  330  git pull origin master
+  331  cd ..
+  332  git clone git@github.com:seankim248/ajax-project.git
+  333  git cd ajax-project/
+  334  cd ajax-project/
+  335  git status
+  336  git switch project-code
+  337  git switch master
+  338  git branch project-interfaces
+  339  git switch project-interfaces
+  340  git status
+  341  git add .
+  342  git commit -m "made phone display fluid"
+  343  git push origin project-interfaces
+  344  git status
+  345  cd ..
+  346  git c1121-code-solutions/
+  347  cd c1121-code-solutions/
+  348  git branch es6-const-let
+  349  git switch es6-const-let
+  350  git status
+  351  git add es6-const-let
+  352  gitstatus
+  353  git status
+  354  git commit -m "es6-const-let"
+  355  git push origin master
+  356  git push origin es6-const-let
+  357  git status
+  358  git add index.html
+  359  git add es6-const-let/index.html
+  360  git status
+  361  git commit -m "added changes"
+  362  git push origin es6-const-let
+  363  git status
+  364  git switch master
+  365  git pull origin master
+  366  git branch es6-template-literals
+  367  git switch es6-template-literals
+  368  git status
+  369  git add es6-template-literals
+  370  git commit -m "es6-template-literals"
+  371  git push origin es6-template-literals
+  372  git status
+  373  git add .
+  374  git commit -m "changed the template literal"
+  375  git push origin es6-template-literals
+  376  git status
+  377  git add .
+  378  git commit -m "made all concatenation expressions into template literals"
+  379  git push origin es6-template-literals
+  380  git status
+  381  git switch master
+  382  git pull origin master
+  383  git branch es6-destructuring
+  384  git switch es6-destructuring
+  385  git status
+  386  git add es6-destructuring
+  387  git status
+  388  git commit -m "es6-destructuring"
+  389  git status
+  390  git push origin es6-destructuring
+  391  git status
+  392  git switch master
+  393  git branch es6-arrow-functions
+  394  git switch es6-arrow-functions
+  395  git status
+  396  git add .
+  397  git commit -m "es6-arrow-functions"
+  398  git status
+  399  git commit -m "es6-arrow-functions"
+  400  git status
+  401  git add .
+  402  git commit -m "es6-arrow-functions"
+  403  git status
+  404  git rm --cached es6-destructuring
+  405  git rm -rf --cached es6-destructuring
+  406  git status
+  407  git rm -rf --cached es6-destructuring
+  408  git commit -m "es6-arrow-functions"
+  409  git status
+  410  git push origin es6-arrow-functions
+  411  git status
+  412  git swtich master
+  413  git switch master
+  414  git status
+  415  git switch es6-destructuring
+  416  git branch command-line-basics
+  417  git switch command-line-basics
+  418  git status
+  419  cd command-line-basics
+  420  pwd
+  421  man man
+  422  man cat
+  423  ls
+  424  man cat
+  425  cat -A
+  426  man cat -A
+  427  man cat
+  428  cat --show-all
+  429  man cat
+  430  cat laziness.txt
+  431  cat impatience.txt
+  432  cat hubris.txt
+  433  man cat
+  434  cat laziness.txt impatience.txt hubris.txt
+  435  cat laziness.txt impatience.txt hubris.txt > three-virtues.txt
+  436  cat three-virtues.txt
+  437  ls
+  438  man ls
+  439  ls -a
+  440  man ls
+  441  ls -F
+  442  ls lfz-staff
+  443  ls lfz-staff -a
+  444  ls lfz-staff -F
+  445  ls -aF lfz-staff > lfz-staff/contents.txt
+  446  cat lfz-staff/contexts.txt
+  447  ls
+  448  cat lfz-staff/contents.txt
+  449  pwd
+  450  man pwd
+  451  pwd > i-was-here.txt
+  452  ls
+  453  cat i-was-here.txt
+  454  man echo
+  455  echo 'Hello, World!' > hello.txt
+  456  ls
+  457  cat hello.txt
+  458  man touch
+  459  touch tag-youre-it.txt
+  460  touch snoot/boop.txt
+  461  ls
+  462  ls snoot
+  463  man mkdir
+  464  mkdir parent
+  465  ls
+  466  man mkdir
+  467  ls parent
+  468  mkdir parent -p child
+  469  ls
+  470  rm -rf child
+  471  ls
+  472  man mkdir
+  473  mkdir -p parent/child/grandchild
+  474  ls
+  475  ls parent
+  476  ls parent/child
+  477  touch .gitkeep parent/child/grandchild
+  478  ls parent/child
+  479  ls parent/child/grandchild
+  480  ls -a parent/child/grandchild
+  481  ls
+  482  ls -a
+  483  touch parent/child/grandchild/.gitkeep
+  484  ls parent/child/grandchild
+  485  ls -a parent/child/grandchild
+  486  man mv
+  487  mv pokeimans pokemon
+  488  ls
+  489  mv pokiemans pokemon
+  490  ls
+  491  rm lol.txt
+  492  ls
+  493  rm -r kill-me
+  494  ls
+  495  man rm
+  496  man cp
+  497  cp and-then.txt no-and-then.txt
+  498  ls
+  499  ls no-and-then.txt
+  500  cat no-and-then.txt
+  501  cat and-then.txt
+  502  man history
+  503  history
+  504  history > command-history.txt
