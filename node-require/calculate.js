@@ -3,6 +3,8 @@ const subtract = require('./subtract');
 const multiply = require('./multiply');
 const divide = require('./divide');
 
+console.log(process.argv[1]);
+
 var num1 = parseInt(process.argv[2]);
 var num2 = parseInt(process.argv[4]);
 var operator = process.argv[3];
