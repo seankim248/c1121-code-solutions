@@ -1,7 +1,14 @@
 const fs = require('fs');
-for (let i = 2; i < process.argv.length; i++) {
-  fs.readFile(`./${process.argv[i]}`, 'utf8', (err, data) => {
+
+recurse(2);
+
+function recurse(count) {
+  fs.readFile(`./${process.argv[count]}`, 'utf8', (err, data) => {
     if (err) throw err;
     console.log(data);
+    const nextCount = count + 1;
+    if (nextCount < process.argv.length) {
+      recurse(nextCount);
+    }
   });
 }
