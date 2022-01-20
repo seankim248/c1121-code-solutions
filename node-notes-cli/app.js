@@ -2,15 +2,9 @@ const fs = require('fs');
 const JSONdata = require('./data.json');
 
 if (process.argv[2] === 'read') {
-  fs.readFile('data.json', 'utf8', (err, data) => {
-    if (err) {
-      console.log(err);
-      process.exit(1);
-    }
-    for (const key in JSONdata.notes) {
-      console.log(`${key}: ${JSONdata.notes[key]}`);
-    }
-  });
+  for (const key in JSONdata.notes) {
+    console.log(`${key}: ${JSONdata.notes[key]}`);
+  }
 }
 
 if (process.argv[2] === 'create') {
