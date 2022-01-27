@@ -1,5 +1,6 @@
 select
-  "firstName" "lastName"
+  "firstName",
+  "lastName"
 from
   "actors"
   join "castMembers" using ("actorId")

@@ -1,5 +1,6 @@
 select
-  "firstName" "lastName"
+  "firstName",
+  "lastName"
 from
   "customers"
   join "rentals" using ("customerId")
