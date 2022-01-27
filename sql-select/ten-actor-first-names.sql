@@ -1,4 +1,7 @@
-select "actorId",
-"firstName"
-from "actors"
-limit 10;
+select
+  "actorId",
+  "firstName"
+from
+  "actors"
+limit
+  10;
