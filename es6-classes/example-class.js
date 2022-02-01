@@ -1,7 +1,5 @@
 class ExampleClass {
-  constructor() {
-    this.something = undefined;
-  }
+
 }
 
 const example = new ExampleClass();
