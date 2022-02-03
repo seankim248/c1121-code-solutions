@@ -1,0 +1,31 @@
+.slider {
+  position: relative;
+  height: 40px;
+  width: 80px;
+  background-color: rgb(175, 175, 175);
+  border: none;
+  border-radius: 20px;
+  box-shadow: 1px 1px 5px rgb(65, 65, 65) inset;
+}
+
+.slider-active {
+  background-color: rgb(107, 235, 113);
+}
+
+.dot {
+  box-sizing: border-box;
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: white;
+  border: 1px solid grey;
+}
+
+.dot:hover {
+  cursor: pointer;
+}
+
+.dot-active {
+  right: 0;
+}
