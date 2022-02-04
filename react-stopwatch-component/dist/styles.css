@@ -1,0 +1,35 @@
+html,
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+}
+
+i {
+  font-size: 1.3rem;
+}
+
+i:hover {
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.counter {
+  display: flex;
+  height: 120px;
+  width: 120px;
+  border: 1px solid black;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.counter:hover {
+  cursor: pointer;
+}
