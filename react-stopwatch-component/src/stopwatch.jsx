@@ -7,22 +7,27 @@ class StopWatch extends React.Component {
       seconds: 0,
       isOn: false
     };
-    this.handleClick = this.handleClick.bind(this);
+    this.handleIconClick = this.handleIconClick.bind(this);
+    this.handleWatchClick = this.handleWatchClick.bind(this);
   }
 
-  handleClick() {
-    this.setState({
-      isOn: !this.state.isOn
-    });
-  }
-
-  timer() {
+  handleIconClick() {
     if (!this.state.isOn) {
-      setInterval(() => {
-        this.setState({ seconds: this.state.seconds + 1 });
+      this.timerID = setInterval(() => {
+        this.setState({
+          isOn: true,
+          seconds: this.state.seconds + 1
+        });
       }, 1000);
-    } else {
-      this.setState({ seconds: this.state.seconds });
+    } else if (this.state.isOn) {
+      this.setState({ isOn: false });
+      clearInterval(this.timerID);
+    }
+  }
+
+  handleWatchClick() {
+    if (!this.state.isOn) {
+      this.setState({ seconds: 0 });
     }
   }
 
@@ -30,13 +35,10 @@ class StopWatch extends React.Component {
     const iconClass = this.state.isOn ? 'fa-pause' : 'fa-play';
     return (
       <div className="container">
-        <div className="counter">
+        <div onClick={this.handleWatchClick} className="counter">
           <h1>{this.state.seconds}</h1>
         </div>
-        <i onClick={() => {
-          this.handleClick();
-          this.timer();
-        }} className={`fas ${iconClass}`}></i>
+        <i onClick={this.handleIconClick} className={`fas ${iconClass}`}></i>
       </div>
     );
   }
