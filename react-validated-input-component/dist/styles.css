@@ -1,0 +1,19 @@
+p {
+  color: red;
+}
+
+i {
+  margin-left: 10px;
+}
+
+.fa-check {
+  color: rgb(107, 235, 113);
+}
+
+.fa-times {
+  color: red;
+}
+
+.hidden {
+  display: none;
+}
