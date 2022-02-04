@@ -4,9 +4,7 @@ class ValidatedInput extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      value: '',
-      valid: 'hidden',
-      invalid: 'hidden'
+      value: ''
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -19,22 +17,14 @@ class ValidatedInput extends React.Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    const { value } = this.state;
-    if (value === '' || value.length < 8) {
-      this.setState({ invalid: '' });
-      this.setState({ valid: 'hidden' });
-    } else if (value.length > 7) {
-      this.setState({ valid: '' });
-      this.setState({ invalid: 'hidden' });
-    }
   }
 
   getInvalidClass() {
     const { value } = this.state;
-    if (value === '' || value.length < 8) {
-      return 'hidden';
-    } else {
+    if (value.length < 8 && value !== '') {
       return '';
+    } else {
+      return 'hidden';
     }
   }
 
@@ -48,14 +38,16 @@ class ValidatedInput extends React.Component {
   }
 
   render() {
+    const invalidClass = this.getInvalidClass();
+    const validClass = this.getValidClass();
     return (
       <form action="" onSubmit={this.handleSubmit}>
         <label htmlFor="password">Password</label>
         <br />
         <input type="password" id="password" name="password" value={this.state.value} onChange={this.handleChange} />
-        <i className={`fas fa-times ${this.state.invalid}`}></i>
-        <i className={`fas fa-check ${this.state.valid}`}></i>
-        <p className={this.state.invalid}>A password is required.</p>
+        <i className={`fas fa-times ${invalidClass}`}></i>
+        <i className={`fas fa-check ${validClass}`}></i>
+        <p className={invalidClass}>A password is required.</p>
       </form>
     );
   }
