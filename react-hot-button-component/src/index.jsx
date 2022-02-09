@@ -1,11 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import HotButton from './hot-button';
+import App from './components/app';
 
-const element = (
-  <div>
-    <HotButton />
-  </div>
+ReactDOM.render(
+  <App />,
+  document.querySelector('#root')
 );
-
-ReactDOM.render(element, document.querySelector('#root'));
