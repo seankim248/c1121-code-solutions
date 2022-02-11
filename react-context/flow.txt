@@ -1,0 +1,45 @@
+1. User can sign up
+- after pressing the submit button in the AuthForm component, the handleSubmit method gets called
+- a post request gets sent to "/api/auth/sign-up"
+- the index.js in the server directory will receive the request
+- if the user inputs an invalid username/password, the server will throw an error
+- else, argon2 will create a hashedPassword and send a sql query to the database
+- the database will insert the username and hashedPassword into the users table
+- the user prop from the db.query return is destructured and assigned to the const variable user
+- the server then sends a response status 201 and the user object to the client as a JSON string
+- the client receives the response, and then parses it to a JS object
+- after signing-up, the hash location is changed to 'sign-in'
+
+2. User can sign in
+- After pressing the submit button in the AuthForm component, the handleSubmit method gets called
+- a post request gets sent to "/api/auth/sign-in"
+- the index.js in the server directory will receive the request
+- if the user inputs an invalid username/password, the server will throw an error
+- else, the server will run a sql query to get the row with the matching username in the database
+- the user prop from the db.query return is destructured and assigned to the const variable user
+- userId and hashedPassword are destructured from the user object
+- argon2 will then verify if the 2 passwords match
+- if they match, it will create a payload with the userId and username and it also will create a new token for the user that will be sent to the user as a JSON string
+- the client will then receive a response and parses the JSON string to an object
+- if the user and token are both truthy, the onSignIn method of props of AuthForm class is called with the parsed response as its argument
+- then the handleSignIn method of the App class will be called
+- the user and token will be destructured from result
+- the token will be saved to local storage and the user property of state will be updated with user as its new value
+
+
+3. User can stay signed in (even if they refresh the page)
+- after user refreshes the page, componentDidMount will be called
+- the state route will be updated to the current hash location and
+- it will call getItem method of localstorage
+- if the return is truthy, user will be set to the return of decodeToken function called with token as its argument otherwise the user will be set to null
+- state will be updated with user set to user and isAuthorizing set to false
+- render will be called after state gets updated and re-renders the app component
+- react will then update the DOM
+
+4. User can sign out
+- when user clicks on the sign out button, the onClick prop will call handleSignOut from the class App component and the token will be removed from the local storage
+- the user property of state will be updated with null as its new value
+- render will be called after state gets updated and will re-render the app component
+- this.state.user will become null
+- then the value of the user property of contextValue will be set to null and the global value of user will also be set to null
+- react will then update the DOM
