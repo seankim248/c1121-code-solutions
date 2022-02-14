@@ -15,18 +15,21 @@ export default class Prompt extends React.Component {
 
   render() {
     return (
-      <div className='bg-charcoal-black h-screen'>
-        <div className='max-w-sm mx-auto'>
-          <div>
-            <i className="fa-solid fa-keyboard"></i>
-            <h1 className='text-5xl text-golden-yellow font-light font-dongle inline-block'>typicaltyper</h1>
-            <p className='text-3xl text-charcoal-gray font-dongle'>
-              time: <span className='text-golden-yellow'>15</span> <span>30</span> <span>45</span> <span>60</span> <span>120</span>
-            </p>
-          </div>
-          <div className='mt-52'>
-            <h1 className='text-5xl text-charcoal-gray font-light font-dongle justify-center content-center'> <span className='block text-golden-yellow'>15</span>Once you have tested flight, you will forever walk the earth with your eyes</h1>
-          </div>
+      <div className='container'>
+        <div className='header-content'>
+          <i className="far fa-keyboard"></i>
+          <h1 className='title'>typicaltyper</h1>
+          <p className='time-options'>
+            time: <span className='selected time-options-number'>15</span> <span className='time-options-number'>30</span> <span className='time-options-number'>45</span> <span className='time-options-number'>60</span> <span className='time-options-number'>120</span>
+          </p>
+        </div>
+        <div className='main-content' onKeyPress={this.handleKeyPress}>
+          <h1 className='counter selected'>15</h1>
+          <h1 className='prompt'></h1>
+        </div>
+        <div className="footer-content">
+          <h3>Join Room</h3>
+          <h3>Create Room</h3>
         </div>
       </div>
     );
